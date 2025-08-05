@@ -15,7 +15,7 @@ class Player:
                 self.update_points()
                 list(map(lambda p: p.update(number, col), self.links))
                 return
-        raise Exception(f"Column {col} is full")
+        raise Exception(f"Column {col + 1} is full")
 
     def link(self, another):
         self.links.append(another)
